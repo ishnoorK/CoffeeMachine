@@ -10,7 +10,8 @@ import service.RecipeService;
 import java.util.Map;
 
 /**
- * Service to vend out @Beverage
+ * Service to vend out {@link Beverage}. This will be the service exposed to users.
+ * All results will be written to system.out
  */
 public class CoffeeMachineServiceImpl implements CoffeeMachineService {
 

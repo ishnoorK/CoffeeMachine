@@ -8,6 +8,9 @@ import service.RecipeService;
 
 import java.util.Map;
 
+/**
+ * Service to read/write Recipes
+ */
 public class RecipeServiceImpl implements RecipeService {
 
     RecipeDAO recipeDAO = new RecipeDAOImpl();
@@ -15,7 +18,7 @@ public class RecipeServiceImpl implements RecipeService {
     @Override
     public void addRecipe(Beverage beverage, Map<Ingredient, Integer> ingredientQuantities) {
         if (recipeDAO.getBeverageRecipe(beverage) != null) {
-            System.out.println("Updating the already existing recipe for " + beverage.getDisplayName());
+            // System.out.println("Updating the already existing recipe for " + beverage.getDisplayName());
         }
         recipeDAO.addBeverageRecepie(beverage, ingredientQuantities);
     }

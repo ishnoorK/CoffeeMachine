@@ -5,7 +5,8 @@ public enum Ingredient {
     HOT_MILK("hot milk"),
     GINGER_SYRUP("ginger syrup"),
     SUGAR_SYRUP("sugar syrup"),
-    TEA_LEAVES_SYRUP("tea leaves syrup");
+    TEA_LEAVES_SYRUP("tea leaves syrup"),
+    GREEN_MIXTURE("green mixture");
 
     private String displayName;
 
