@@ -12,5 +12,5 @@ public interface RecipeDAO {
 
     public Map<Ingredient, Integer> getBeverageRecipe(Beverage beverage);
 
-    public void addBeverageRecepie(Map<Ingredient, Integer> ingredientQuantities);
+    public void addBeverageRecepie(Beverage beverage,Map<Ingredient, Integer> ingredientQuantities);
 }

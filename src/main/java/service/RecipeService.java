@@ -10,7 +10,7 @@ import java.util.Map;
  */
 public interface RecipeService {
 
-    public void addRecipe(Map<Ingredient, Integer> ingredientQuantities);
+    public void addRecipe(Beverage beverage, Map<Ingredient, Integer> ingredientQuantities);
 
     public Map<Ingredient, Integer> getRecipe(Beverage beverage);
 }
